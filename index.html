@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Matt Heninger Resume</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.blue_grey-red.min.css" />
+  <style>
+    .resume-ribbon {
+      width: 100%;
+      height: 40vh;
+      background-color: #0D47A1;
+      flex-shrink: 0;
+    }
+    .resume-main {
+      margin-top: -35vh;
+      flex-shrink: 0;
+    }
+    .resume-container {
+      max-width: 1280px;
+      width: calc(100% - 16px);
+      margin: 0 auto;
+    }
+
+
+
+    .resume-content {
+      border-radius: 2px;
+      padding: 48px 32px;
+      margin-bottom: 16px;
+    }
+
+
+
+    .resume-contact ul {
+      margin: 0;
+      padding: 0;
+    }
+    .resume-contact ul li {
+      list-style: none;
+      margin-bottom: 8px;
+    }
+    .resume-contact i {
+      font-size: 18px;
+      vertical-align: -4px;
+      margin-right: 8px;
+    }
+
+
+
+    section {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 24px;
+    }
+    .section-icon {
+      margin-top: 2px;
+      margin-right: 16px;
+    }
+    .section-body {
+      flex: 1;
+    }
+    h4, h6 {
+      margin: 0;
+    }
+    .section-body h4 {
+      text-transform: uppercase;
+    }
+    .text-center {
+      text-align: center;
+    }
+    .img-circle {
+      border-radius: 50%;
+    }
+
+    .contact-image {
+      width: 128px;
+      height: 128px;
+      margin-bottom: 16px;
+    }
+    .contact-name {
+      font-size: 24px;
+      line-height: 32px;
+      margin: 0;
+    }
+    .contact-title {
+      display: block;
+      margin-bottom: 16px;
+    }
+
+    .section-heading {
+      font-size: 20px;
+      line-height: 24px;
+      text-transform: uppercase;
+      margin-top: 0;
+      padding-bottom: 8px;
+    }
+    .section-subheading {
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin-top: 0;
+      border-bottom: 1px solid rgba(0,0,0,0.12);
+      padding-bottom: 4px;
+      margin-bottom: 12px;
+    }
+
+
+    .section-subsection {
+      margin-bottom: 24px;
+    }
+    .section-subsection p {
+      margin-bottom: 0;
+    }
+    .section-subsection ul {
+      margin: 0;
+      padding-left: 24px;
+    }
+    .section-subsection ul li {
+      margin-bottom: 4px;
+    }
+    .section-subsection h6 {
+      font-weight: 500;
+    }
+
+    .skills-subsection {
+      margin: 16px 0px;
+    }
+    .skills-subsection ul {
+      padding: 0;
+    }
+    .skills-subsection ul li {
+      list-style: none;
+      display: inline-block;
+      background: #ECEFF1;
+      padding: 0 8px;
+      border: 1px solid #B0BEC5;
+      border-radius: 2px;
+    }
+    .skills-subsection ul li.no-style {
+      background: transparent;
+      border: none;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: #757575;
+      padding: 0 8px 0 0;
+    }
+
+    .skills-subsection .section-subsection {
+      border-left: 4px solid rgba(0,0,0,0.12);
+      padding-left: 12px;
+    }
+
+
+    .work-title {
+      margin-bottom: 8px;
+      display: inline-block;
+    }
+    .work-daterange {
+      float: right;
+      display: inline-block;
+      margin-bottom: 8px;
+    }
+
+
+
+    .mdl-grid {
+      -webkit-box-align: start;
+      -webkit-align-items: flex-start;
+      -ms-flex-align: flex-start;
+      align-items: flex-start;
+    }
+
+    p, span, ul {
+      font-size: 13px;
+      line-height: 18px;
+    }
+
+    .mb0 {
+      margin-bottom: 0;
+    }
+
+    .print-show {
+      display: none;
+    }
+
+    @media print {
+      .print-show {
+        display: block;
+      }
+      .print-hide {
+        display: none;
+      }
+      .contact-list {
+        display: flex;
+      }
+      .contact-list li {
+        font-size: 10px;
+        text-align: center;
+        flex: auto;
+      }
+      .contact-list li i {
+        margin-right: 0;
+      }
+      .resume-content {
+        padding: 24px 16px;
+        margin: 0;
+      }
+      
+      .pagebreak-hard {
+        page-break-inside: always;
+        page-break-after: always;
+        page-break-before: always;
+      }
+    }
+
+  </style>
+</head>
+
+<body class="mdl-color--grey-100">
+  <div class="mdl-layout">
+    <div class="resume-ribbon"></div>
+    <main class="resume-main mdl-layout__content">
+      <div class="resume-container mdl-grid">
+
+        <!-- Contact Info -->
+        <div class="resume-contact resume-content mdl-color--white mdl-shadow--4dp mdl-color-text--grey-800 mdl-cell mdl-cell--4-col-phone mdl-cell--8-col-tablet mdl-cell--3-col-desktop">
+          <div class="text-center">
+            <img class="contact-image img-circle" src="https://pbs.twimg.com/profile_images/672811869367762945/AeC9yzOx.jpg">
+            <h2 class="contact-name">Matt Heninger</h2>
+            <span class="contact-title">Healthcare Finance Professional</span>
+          </div>
+          <ul class="contact-list">
+            <li><i class="material-icons">location_on</i> Gilbert, Arizona</li>
+            <li><i class="material-icons">phone</i> (480) 619-1553</li>
+            <li><i class="material-icons">email</i> mattheninger@gmail.com</li>
+            <li><i class="material-icons">web</i> http://mattheninger.com</li>
+            <li><i class="material-icons">translate</i> English / Japanese</li>
+          </ul>
+        </div>
+
+        <!-- Background Info -->
+        <div class="resume-background resume-content mdl-color--white mdl-shadow--4dp mdl-color-text--grey-800 mdl-cell mdl-cell--4-col-phone mdl-cell--8-col-tablet mdl-cell--9-col-desktop">
+          <!-- <h3 class="section-heading mdl-color-text--grey-600 print-hide">Background</h3> -->
+          <section class="about">
+            <div class="section-icon">
+              <i class="material-icons mdl-color-text--grey-600">person</i>
+            </div>
+            <div class="section-body">
+              <h4 class="section-subheading mdl-color-text--grey-600">About</h4>
+              <div>
+                <p>Results driven finance professional with 28 years progressive experience in health care. Proven effectiveness in successfully driving organizational change and earnings improvement. Recognized for the ability to anticipate the needs of stakeholders and to motivate others in the achievement of individual and company goals. Excellent financial management, analytical and problem-solving skills. Hold MBA in Finance.</p>
+              </div>
+            </div>
+          </section>
+          <section class="work">
+            <div class="section-icon">
+              <i class="material-icons mdl-color-text--grey-600">work</i>
+            </div>
+            <div class="section-body">
+              <h4 class="section-subheading mdl-color-text--grey-600">Work</h4>
+              <div class="section-subsection">
+                <h6>PopHealthMan</h6>
+                <div style="overflow: hidden;">
+                  <span class="work-title">Senior Director, Analytics &amp; Reporting</span>
+                  <span class="work-daterange">Jan 2009 - Present</span>
+                </div>
+                <ul>
+                  <li>Ensure that clients are maximizing revenue opportunities.</li>
+                  <li>Ensure proper sizing, trending and tracking of key financial indicators.</li>
+                  <li>Identify and implement best practice analytical and data methodologies across all areas of responsibility.</li>
+                  <li>Analyze monthly Medicare revenue results and produce a comprehensive, effective package of monitor tools.</li>
+                  <li>Provide business advisory services that include planning, benchmarking and best practice information to effectively manage medical revenue, cost and utilization for clients.</li>
+                </ul>
+              </div>
+              <div class="section-subsection">
+                <h6>CIGNA HEALTHCARE OF ARIZONA, INC.</h6>
+                <div style="overflow: hidden;">
+                  <span class="work-title mb0">Finance Director - Arizona CIGNA Medical Group Finance</span>
+                </div>
+                <div style="overflow: hidden;">
+                  <span class="work-title">Chief Financial Officer - CIGNA Community Choice – Medicaid Plan</span>
+                  <span class="work-daterange">Nov 2001 - Jan 2009</span>
+                </div>
+                <ul>
+                  <li>Integrate the Medical Economic functions of the Arizona Healthplan and the CIGNA Medical Group (CMG).</li>
+                  <li>Ensure that CIGNA is maximizing opportunities between CMG and the healthplan and minimizing leakage.</li>
+                  <li>Integrate Medical Action Plans (MAPs) for the healthplan and medical group.</li>
+                  <li>Ensure proper sizing and tracking of MAPs and integrate into Planning and Forecasting models.</li>
+                  <li>Identify and implement best practice analytical and data methodologies across all areas of responsibility.</li>
+                  <li>Analyze monthly Medicare financial results and produce a comprehensive, effective package of monitor tools.</li>
+                  <li>Produce monthly key utilization and cost metrics for Medicare business and CMG vs. IPA networks.</li>
+                  <li>Identify unfavorable utilization and cost trend and work with contracting and medical management to make improvements.</li>
+                  <li>Provide business advisory services that include planning, benchmarking and best practice information to effectively manage medical cost and utilization.</li>
+                </ul>
+              </div>
+              <div class="pagebreak-hard"></div>
+              <div class="section-subsection">
+                <h6>SCOTTSDALE PHYSICIAN HOSPITAL ORGANIZATION, INC.</h6>
+                <div style="overflow: hidden;">
+                  <span class="work-title">Chief Financial Officer</span>
+                  <span class="work-daterange">Feb 1997 - Oct 2001</span>
+                </div>
+                <ul>
+                  <li>Created, analyzed, evaluated, projected and reported financial and business information to assure the overall profitability and financial solvency of the business.</li>
+                  <li>Established and maintained business relationships with financial institutions, auditors and insurance brokers.</li>
+                  <li>Set direction, established action plans, developed financial policy, and managed cash flow.</li>
+                  <li>Oversaw the reimbursement distribution, accounting, treasury, analytical, utilization, budgeting, financial reporting and all other general financial functions of the organization.</li>
+                  <li>Established and maintained accounting policies and procedures which ensure GAAP compliance and serve to safeguard company resources.</li>
+                  <li>Directed the strategic decision making processes related specifically to reimbursement methodologies, capitation rates, contracting rates, medical delivery systems and cost management.</li>
+                  <li>Established a system of data capture and management to support a system of performance metrics across all disciplines in order to facilitate decision-making and support the business mission.</li>
+                </ul>
+              </div>
+              <div class="section-subsection">
+                <h6>AETNA US HEALTHCARE OF ARIZONA, INC.</h6>
+                <div style="overflow: hidden;">
+                  <span class="work-title">Financial Chief of Staff</span>
+                  <span class="work-daterange">Apr 1996 - Feb 1997</span>
+                </div>
+                <ul>
+                  <li>Led the development of innovative procedures and approaches to identification, reporting, monitoring and problem solving of opportunities to enhance cost-effectiveness and profitability of the Health Plan.</li>
+                  <li>Supported the development of local market financial plans, business assumptions, financial and membership forecasts and expense budgets.</li>
+                  <li>Directed the strategic decision making processes related specifically to reimbursement methodologies and rates, contracting, medical delivery systems and cost management.</li>
+                  <li>Financial interface between local Plan and Western Regional Office.</li>
+                  <li>Managed Administrative functions of Healthplan business office including accounts payable, building lease and maintenance, Administrative staff, personnel files, etc.</li>
+                  <li>Supported the development of appropriate systematic controls to ensure accuracy of data and provide oversight of all other internal control mechanisms.</li>
+                </ul>
+              </div>
+              <div class="section-subsection">
+                <h6>HEALTHPARTNERS HEALTHPLANS (became United Healthcare)</h6>
+                <div style="overflow: hidden;">
+                  <span class="work-title">Manager</span>
+                  <span class="work-daterange">Sep 1994 - Apr 1996</span>
+                </div>
+                <ul>
+                  <li>Directed the hiring, training, evaluation and career development of talent-intensive, professional analysts, keeping them motivated, challenged and productive.</li>
+                  <li>Led the development of innovative procedures and approaches to identification, reporting, monitoring and problem solving of opportunities to enhance the cost-effectiveness and profitability of the Healthplan.</li>
+                  <li>Directed the strategic decision making processes related specifically to reimbursement methodologies, contracting, medical delivery systems and cost management.</li>
+                  <li>Guided the development of analytical/utilization reporting necessary to manage, control and influence strategic operational decision making processes.  Including, but not limited to employer group reporting, provider profiling and utilization monitoring.</li>
+                  <li>Directed the analytical support of the Health Plan's quality initiatives and processes.</li>
+                  <li>Achieved three year NCQA full accreditation in 1996.</li>
+                </ul>
+              </div>
+              <div class="section-subsection">
+                <h6>CIGNA HEALTHCARE OF ARIZONA, INC.</h6>
+                <div style="overflow: hidden;">
+                  <span class="work-title mb0">Manager - Strategic Healthcare Analysis Reporting and Consulting</span>
+                  <span class="work-daterange mb0">Sep 1992 - Sep 1994</span>
+                </div>
+                <div style="overflow: hidden;">
+                  <span class="work-title">Assistant Manager - Medical Financial Analysis</span>
+                  <span class="work-daterange">Jul 1990 - Sep 1992</span>
+                </div>
+                <ul>
+                  <li>Identified and implemented cost-saving opportunities and action plans via outlier-focused analyses.</li>
+                  <li>Interfaced with finance, accounting, information systems, medical and senior staff.</li>
+                  <li>Member of CIGNA Private Practice Plan executive committee and incentive development team.</li>
+                  <li>Forecasted, analyzed, and implemented budget targets for medical cost areas.</li>
+                  <li>Directed the hiring, training, evaluation and career development of talent-intensive professional analysts.</li>
+                  <li>Performed contract analysis, negotiation and monitoring assuring most cost-effective financial results.</li>
+                </ul>
+                <div style="overflow: hidden;">
+                  <span class="work-title mb0">Senior Financial Analyst - Planning and Analysis</span>
+                  <span class="work-daterange mb0">Apr 1989 - Jul 1990</span>
+                </div>
+                <div style="overflow: hidden;">
+                  <span class="work-title">Financial Analyst - Planning and Analysis</span>
+                  <span class="work-daterange">Jun 1988 - Apr 1989</span>
+                </div>
+                <ul>
+                  <li>Developed progressively complex microcomputer analytical models to translate monthly financial and statistical data into field management reports.</li>
+                  <li>Analyzed cost data on monthly labor and operating expenses for Managed Overhead Reporting.</li>
+                  <li>Evaluated profitability of Lines of Business and determined methods of improving performance and efficiency.</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section class="skills-subsection">
+            <div class="section-icon">
+              <i class="material-icons mdl-color-text--grey-600">code</i>
+            </div>
+            <div class="section-body">
+              <h4 class="section-subheading mdl-color-text--grey-600">Skills</h4>
+              <div class="section-subsection">
+                <h6>Spreadsheet/Graphics</h6>
+                <ul>
+                  <li>Lotus 1-2-3</li>
+                  <li>Harvard Graphics</li>
+                  <li>Excel</li>
+                  <li>PowerPoint</li>
+                </ul>
+              </div>
+              <div class="section-subsection">
+                <h6>Database/Word Processing</h6>
+                <ul>
+                  <li>Paradox</li>
+                  <li>Access</li>
+                  <li>Impromptu</li>
+                  <li>Powerplay</li>
+                  <li>WordPerfect</li>
+                  <li>MS Word</li>
+                </ul>
+              </div>
+              <div class="section-subsection">
+                <h6>Programming Languages</h6>
+                <ul>
+                  <li>Microsoft SQL Server</li>
+                  <li>PAL</li>
+                  <li>PASCAL</li>
+                  <li>SQL-AS400</li>
+                  <li>QMF</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="section-icon">
+              <i class="material-icons mdl-color-text--grey-600">school</i>
+            </div>
+            <div class="section-body">
+              <h4 class="section-subheading mdl-color-text--grey-600">Education</h4>
+              <div>
+                <h6>Master of Business Administration | Emphasis: Finance</h6>
+                <p class="mb0">Marriott School of Management, Brigham Young University</p>
+                <p>1988</p>
+              </div>
+              <div>
+                <h6>Japanese, Bachelor of Arts | Minor: Asian Studies</h6>
+                <p class="mb0">Brigham Young University</p>
+                <p>1986</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
